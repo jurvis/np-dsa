@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include "list.hpp"
+#include <string>
 
 int main(int argc, const char * argv[]) {
     List *nameList = new List;

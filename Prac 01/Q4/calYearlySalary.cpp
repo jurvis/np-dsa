@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include "Employee.h"
+#include <string>
 
 int main(int argc, const char * argv[]) {
     

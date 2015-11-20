@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include <string>
 using namespace std;
 
 int pd_main(int argc, const char * argv[]) {

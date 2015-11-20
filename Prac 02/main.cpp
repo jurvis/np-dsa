@@ -9,6 +9,7 @@
 #include <iostream>
 #include "person.hpp"
 #include "list.hpp"
+#include <string>
 
 List listOfContacts;
 

@@ -8,6 +8,7 @@
 
 #include <iostream>
 #include "stack.h"
+#include <string>
 #include "template_stack.hpp"
 
 int GetOperatorWeight(char c);

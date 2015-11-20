@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include <string>
 using namespace std;
 
 void changeValue(int x, int *y);
