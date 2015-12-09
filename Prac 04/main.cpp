@@ -8,7 +8,6 @@
 
 #include <iostream>
 #include "stack.h"
-#include <string>
 #include "template_stack.hpp"
 
 int GetOperatorWeight(char c);
@@ -106,6 +105,7 @@ std::string convertInfixToPostFix(std::string exp) {
             while (!operatorStack->isEmpty() && GetOperatorWeight(nextChar) <= GetOperatorWeight(tempChar))  {
                 postFix += tempChar;
                 operatorStack->pop();
+                operatorStack->getTop(tempChar);
             }
             operatorStack->push(nextChar);
         } else if (nextChar == '(') {
@@ -158,9 +158,6 @@ bool isOperand(char c) {
 }
 
 bool isOperator(char c) {
-    if (c == '^' || c == '+' || c == '-' || c == '*' || c == '/')
-        return true;
-    
-    return false;
+    return (c == '^' || c == '+' || c == '-' || c == '*' || c == '/');
 
 }
